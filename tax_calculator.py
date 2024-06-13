@@ -1,6 +1,16 @@
 import streamlit as st
 import pandas as pd
 
+hide_st_style = """
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                header {visibility: hidden;}
+                </style>
+                """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 def calculate_tax(income):
     if income <= 600000:
         return 0
