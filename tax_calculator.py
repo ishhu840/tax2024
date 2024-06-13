@@ -16,7 +16,7 @@ def calculate_tax(income):
         return 1610000 + (income - 5600000) * 0.45
 
 def main():
-    st.title("Income Tax Calculator (FY2024-25)")
+    st.title("Income Tax Calculator (FY 2024-25)")
 
     # Option to select income type (yearly or monthly)
     income_type = st.radio("Select your income type:", ('Yearly', 'Monthly'))
